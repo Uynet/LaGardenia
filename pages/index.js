@@ -8,7 +8,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>こんにちわ</h1>
-      トップページだよ
+      <div className="text-gray-600 font-selif"> トップページだよ </div>
       <img src="/images/uychan.png" width = {200} alt="A" />
     </div>
   )
