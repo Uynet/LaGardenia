@@ -1,15 +1,16 @@
 import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout home>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
-      <h1>こんにちわ</h1>
-      <div className="text-gray-600 font-selif"> トップページだよ </div>
-      <img src="/images/uychan.png" width = {200} alt="A" />
-    </div>
+      <section className={utilStyles.headingMd}>
+        <p>こんにちわ</p>
+      </section>
+    </Layout>
   )
 }
