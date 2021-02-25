@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
+//builtin func
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   return {
