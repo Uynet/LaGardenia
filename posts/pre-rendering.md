@@ -1,5 +1,5 @@
 ---
-title: 'Two Forms of Pre-rendering'
+title: '今日は、虚無をしました'
 date: '2020-01-01'
 ---
 
