@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import Post from './posts/[id]'
 
 //builtin func
 export async function getStaticProps() {
@@ -13,6 +14,20 @@ export async function getStaticProps() {
       allPostsData
     }
   }
+}
+
+function PostData({id , date , title}){
+  return(
+            <div className={utilStyles.listItem} key={id}>
+              <Link href={`/posts/${id}`}>
+                <a> {title} </a>
+              </Link>
+              <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+            </div>
+  )
 }
 
 export default function Home({allPostsData}) {
@@ -25,17 +40,7 @@ export default function Home({allPostsData}) {
         <h2 className={utilStyles.headingLg}>ゆいブログ</h2>
         <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>
-              {title}
-                </a>
-              </Link>
-              <br />
-               <small className={utilStyles.lightText}>
-    <Date dateString={date} />
-  </small>
-            </li>
+            <PostData key={id} id={id} date={date} title={title}/>
           ))}
         </ul>
       </section>
