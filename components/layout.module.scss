@@ -115,7 +115,7 @@ $introOutStart: 3.5s;
 
 .jacketBG {
   z-index: -1;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -125,6 +125,19 @@ $introOutStart: 3.5s;
   left: 0;
   filter: blur(4px);
   animation: FadeInBG 4s 2s both;
+}
+.bgDiv {
+  z-index: 0;
+  //position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/bg.png");
+  background-size: cover;
+  filter: blur(4px);
+  animation: FadeInBG 4s 2s both;
+  background-position: center;
 }
 .angel {
   position: absolute;
