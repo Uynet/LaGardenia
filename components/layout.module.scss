@@ -22,7 +22,7 @@
   bottom: 0;
   width: 30%;
   opacity: 0;
-  animation: BlinkFadeIn 0.5s 1.6s forwards;
+  animation: BlinkFadeIn 0.5s 1.6s both;
 }
 
 .imgFlame {
@@ -34,8 +34,8 @@
   bottom: 0;
   opacity: 0;
   width: 80%;
-  animation: flame 1.2s 0.4s cubic-bezier(0, 1, 0, 1) forwards,
-    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) forwards;
+  animation: flame 1.2s 0.4s cubic-bezier(0, 1, 0, 1) both,
+    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) both;
 }
 
 .screen1 {
@@ -46,7 +46,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffc08c;
-  animation: screen 0.9s 3s cubic-bezier(0, 1, 0, 1) forwards;
+  animation: screen 0.9s 3s cubic-bezier(0, 1, 0, 1) both;
 }
 
 @keyframes flame {
@@ -101,5 +101,41 @@
   }
   100% {
     top: 0%;
+  }
+}
+
+.jacketBG {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+.bg {
+  top: 0;
+  left: 0;
+  filter: blur(4px);
+  animation: FadeInBG 4s 2s both;
+}
+.angel {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50vw;
+  animation: FadeIn 1s 3s both;
+}
+
+@keyframes FadeInBG {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
   }
 }
