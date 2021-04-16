@@ -1,10 +1,54 @@
-.container {
-  background-image: url("/images/bg-none.png");
-}
-
 $gold: #ffc08c;
 $gold2: #ffa080;
 
+$gold3: #ffe8cc;
+$mizu: #9be2f1;
+$blue: #8ca5ff;
+
+.container {
+  // background-image: url("/images/bg-none.png");
+  color: $blue;
+  background: rgba(255, 255, 255, 0.9);
+}
+.block {
+  opacity: 0.9;
+  height: 300px;
+  background: $blue;
+  background: $mizu;
+}
+
+$flameIn: 3s;
+.flame {
+  z-index: 4;
+  position: fixed;
+  width: min(max(100px, 13vw), 40vw);
+  animation: FadeIn 1.4s $flameIn both;
+}
+
+.flameLT {
+  top: 5px;
+  left: 5px;
+}
+.flameRT {
+  right: 5px;
+  transform: scale(-1, 1);
+}
+.flameLB {
+  bottom: 5px;
+  left: 5px;
+  transform: scale(1, -1);
+}
+.flameRB {
+  bottom: 5px;
+  right: 5px;
+  transform: scale(-1, -1);
+}
+
+.mini {
+  display: block;
+  position: relative;
+  left: 70%;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -193,8 +237,16 @@ $introOutStart: 3.5s;
   color: #fff;
 }
 .Label {
-  font-family: source-han-sans-japanese, sans-serif;
-  text-align: center;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 20px;
   font-size: 40px;
   color: $gold2;
+}
+
+.copyright {
+  color: $blue;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
 }
