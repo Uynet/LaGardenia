@@ -13,6 +13,8 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+$introOutStart: 3.5s;
+
 .loadingLogo {
   position: absolute;
   margin: auto;
@@ -21,8 +23,14 @@
   right: 0;
   bottom: 0;
   width: 30%;
-  opacity: 0;
-  animation: BlinkFadeIn 0.5s 1.6s both;
+  animation: BlinkFadeIn 0.5s 1.6s both, introOut 0.5s $introOutStart forwards;
+}
+@keyframes introOut {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .imgFlame {
@@ -35,7 +43,8 @@
   opacity: 0;
   width: 80%;
   animation: flame 1.2s 0.4s cubic-bezier(0, 1, 0, 1) both,
-    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) both;
+    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) both,
+    introOut 0.5s $introOutStart forwards;
 }
 
 .screen1 {

@@ -6,8 +6,10 @@ export default function Layout() {
   return (
     <div className={styles.container}>
       <div>
-        <img className={styles.imgFlame} src="images/flame.png" />
-        <img className={styles.loadingLogo} src="images/logo.png" />
+        <div className={styles.intro}>
+          <img className={styles.imgFlame} src="images/flame.png" />
+          <img className={styles.loadingLogo} src="images/logo.png" />
+        </div>
         {/*<div className={styles.screen1} />*/}
         <div className={styles.jacketBG}>
           <img className={styles.bg} src="images/bg.png" />
