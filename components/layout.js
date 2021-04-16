@@ -11,6 +11,29 @@ function Info() {
   );
 }
 
+function CreditArea(props) {
+  const { name, role } = props;
+  return (
+    <div className={styles.creditArea}>
+      <div className={styles.creditRole}>{role}</div>
+      <div className={styles.creditName}>{name}</div>
+    </div>
+  );
+}
+
+function Credit() {
+  return (
+    <div>
+      <div className={styles.credits}>
+        <CreditArea name="uynet" role="Compose" />
+        <CreditArea name="しーけー" role="Guest" />
+        <CreditArea name="まりあ歩" role="Lyrics" />
+        <CreditArea name="やいぎ" role="Design" />
+      </div>
+    </div>
+  );
+}
+
 export default function Layout() {
   return (
     <div className={styles.container}>
@@ -27,6 +50,7 @@ export default function Layout() {
         {/*<img className={styles.angel} src="images/angel.png" />*/}
       </div>
       <Info />
+      <Credit />
     </div>
   );
 }

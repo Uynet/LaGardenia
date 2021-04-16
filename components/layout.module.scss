@@ -160,3 +160,27 @@ $introOutStart: 3.5s;
     filter: blur(0px);
   }
 }
+
+.credits {
+  color: #ff9d55;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  margin: auto;
+}
+
+.creditArea {
+  width: 20%;
+  margin: 5%;
+  text-align: center;
+}
+.creditName {
+  font-size: 21px;
+}
+.creditRole {
+  font-size: 15px;
+  background: #ff9d55;
+  color: #fff;
+}
