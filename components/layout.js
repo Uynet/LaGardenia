@@ -15,7 +15,17 @@ function Copyright() {
 function Info() {
   return (
     <div>
-      <div className={styles.Label}></div>
+      <div className={styles.Label}>Info</div>
+    </div>
+  );
+}
+
+function Track(props) {
+  const { title, credit } = props;
+  return (
+    <div className={styles.track}>
+      <div className={styles.trackName}>{title}</div>
+      <div className={styles.trackCredit}>{credit}</div>
     </div>
   );
 }
@@ -23,9 +33,16 @@ function TrackList() {
   return (
     <div>
       <div className={styles.Label}>TrackList</div>
-      <div>曲1</div>
-      <div>曲2</div>
-      <div>曲3</div>
+      <Track
+        title="ミルキーホワイト"
+        credit="/ Lyrics:まりあ歩 / Vocal:初音ミク"
+      />
+      <Track title="Utopia Garden" />
+      <Track title="Noname History" />
+      <Track title="此岸ノ華" />
+      <Track title="Astral Heaven" />
+      <Track title="Ever Rezort" credit="/ Arrange:しーけー" />
+      <Track title="Falewell" />
     </div>
   );
 }
