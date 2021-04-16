@@ -1,7 +1,8 @@
 .container {
-  z-index: -4;
   //background-image: url("/images/bg-none.png");
 }
+
+$gold: #ffc08c;
 
 .header {
   display: flex;
@@ -53,7 +54,7 @@ $introOutStart: 3.5s;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffc08c;
+  background-color: $gold;
   animation: screen 0.9s 3s cubic-bezier(0, 1, 0, 1) both;
 }
 
@@ -113,7 +114,6 @@ $introOutStart: 3.5s;
 }
 
 .jacketBG {
-  z-index: -1;
   position: relative;
   top: 0;
   left: 0;
@@ -126,7 +126,6 @@ $introOutStart: 3.5s;
   animation: FadeInBG 4s 2s both;
 }
 .bgDiv {
-  z-index: 0;
   //position: absolute;
   top: 0;
   left: 0;
@@ -162,7 +161,7 @@ $introOutStart: 3.5s;
 }
 
 .credits {
-  color: #ff9d55;
+  color: $gold;
   display: flex;
   justify-content: center;
   left: 0;
@@ -181,6 +180,6 @@ $introOutStart: 3.5s;
 }
 .creditRole {
   font-size: 15px;
-  background: #ff9d55;
+  background: $gold;
   color: #fff;
 }
