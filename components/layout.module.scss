@@ -127,7 +127,6 @@ $introOutStart: 3.5s;
   animation: FadeInBG 4s 2s both;
 }
 .angel {
-  opacity: 0;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -135,7 +134,8 @@ $introOutStart: 3.5s;
   right: 0;
   margin: auto;
   width: 50vw;
-  animation: FadeIn 1s 3s both;
+  filter: blur(4px);
+  animation: FadeInBG 4s 2s both;
 }
 
 @keyframes FadeInBG {
