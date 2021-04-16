@@ -1,6 +1,6 @@
 const adobeloader = function (d) {
   var config = {
-      kitId: "wgx1urz",
+      kitId: "qvh5qhm",
       scriptTimeout: 3000,
       async: true,
     },

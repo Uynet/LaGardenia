@@ -1,4 +1,5 @@
 import styles from "./layout.module.scss";
+import Head from "next/head";
 
 export const siteTitle = "LaGardenia";
 
@@ -12,7 +13,10 @@ function Info() {
 
 export default function Layout() {
   return (
-    <div>
+    <div className={styles.container}>
+      <Head>
+        <title>{"LA GARDENIA"}</title>
+      </Head>
       <div className={styles.intro}>
         <img className={styles.imgFlame} src="images/flame.png" />
         <img className={styles.loadingLogo} src="images/logo.png" />
