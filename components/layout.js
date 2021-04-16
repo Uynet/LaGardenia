@@ -15,6 +15,7 @@ export default function Layout({ children, home }) {
       </Head>
       <div>
         <img className={styles.imgFlame} src="images/flame.png" />
+        <img className={styles.loadingLogo} src="images/logo.png" />
       </div>
     </div>
   );

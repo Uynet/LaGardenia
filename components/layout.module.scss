@@ -13,6 +13,17 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+.loadingLogo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  opacity: 0;
+  animation: BlinkFadeIn 0.5s 2s forwards;
+}
 
 .imgFlame {
   position: absolute;
@@ -40,5 +51,34 @@
   }
   to {
     transform: rotate(45deg);
+  }
+}
+
+@keyframes BlinkFadeIn {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
