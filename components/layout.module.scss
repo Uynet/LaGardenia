@@ -56,7 +56,8 @@ $flameIn: 3s;
 .mini {
   display: block;
   position: relative;
-  left: 70%;
+  margin: auto;
+  max-width: 50%;
 }
 .header {
   display: flex;
