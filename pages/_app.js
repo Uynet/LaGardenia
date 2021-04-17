@@ -3,7 +3,9 @@ import adobeloader from "../adobefont";
 import { useEffect, useState } from "react";
 import autoprefixer from "autoprefixer";
 
-function Loading() {
+function Loading(props) {
+  const { progress } = props;
+  const progressStr = (Math.floor(progress) + "").slice(0, 3) + "%";
   return (
     <div
       style={{
@@ -15,6 +17,7 @@ function Loading() {
       }}
     >
       Loading...
+      {progressStr}
     </div>
   );
 }
@@ -30,13 +33,14 @@ const imageURLs = [
 ];
 function MyApp({ Component, pageProps }) {
   let [isLoadComplete, setComplete] = useState(false);
+  let [progress, setProgress] = useState(0);
   let loadedNum = 0;
 
   const onImageLoad = () => {
     loadedNum++;
-    console.log(loadedNum);
+    setProgress((loadedNum / imageURLs.length) * 100);
     if (loadedNum == imageURLs.length) {
-      //setComplete(true);
+      setComplete(true);
       console.log("complete");
     }
   };
@@ -52,8 +56,16 @@ function MyApp({ Component, pageProps }) {
       });
     }
   }, []);
-  console.log(loadedNum);
-  return <>{isLoadComplete ? <Component {...pageProps} /> : <Loading />}</>;
+  console.log(progress);
+  return (
+    <>
+      {isLoadComplete ? (
+        <Component {...pageProps} />
+      ) : (
+        <Loading progress={progress} />
+      )}
+    </>
+  );
 }
 
 export default MyApp;
