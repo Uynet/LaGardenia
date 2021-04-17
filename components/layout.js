@@ -16,7 +16,7 @@ function Store() {
   return (
     <div>
       <div className={styles.Label}>Store</div>
-      comming soon
+      <div className={styles.store}>comming soon...</div>
     </div>
   );
 }

@@ -296,3 +296,15 @@ $introOutStart: 3.5s;
   margin-left: 10px;
   color: $blue;
 }
+
+.store {
+  height: 200px;
+  width: 400px;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: dashed 2px $mizu;
+  border-radius: 7px;
+}
