@@ -262,9 +262,10 @@ $introOutStart: 3.5s;
 }
 
 .copyright {
-  text-align: center;
-  font-size: min(15px, 80%);
-  padding-bottom: 40px;
+  margin: auto;
+  height: 50px;
+  font-size: 0.4vw;
+  padding: 0 10%;
 }
 
 .track {
