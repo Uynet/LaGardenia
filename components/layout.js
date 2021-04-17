@@ -170,7 +170,7 @@ function Credit() {
         <CreditArea
           link="https://twitter.com/uynet"
           name="uynet"
-          role="Compose"
+          role="Compose/web"
         />
         <CreditArea
           link="https://twitter.com/7ck_x"
