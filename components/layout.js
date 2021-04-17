@@ -159,7 +159,7 @@ function Credit() {
         <CreditArea
           link="https://twitter.com/_yaigi"
           name="やいぎ"
-          role="Design"
+          role="Artwork"
         />
       </div>
     </div>
