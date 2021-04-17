@@ -110,7 +110,7 @@ export default function Layout() {
       <div className={styles.jacketBG}>
         <div className={styles.bgDiv} />
         {/*<img className={styles.angel} src="images/angel.png" />*/}
-        {/*<img className={styles.bubble} src="images/bubble.png" />*/}
+        <img className={styles.bubble} src="images/bubble.png" />
       </div>
       <div className={styles.block} />
       <div className={styles.container}>

@@ -6,6 +6,7 @@ $mizu: #9be2f1;
 $blue: #8ca5ff;
 
 .container {
+  text-shadow: 1px 1px 2px white, 0 0 0.4em white;
   // background-image: url("/images/bg-none.png");
   color: $blue;
   //background: rgba(255, 255, 255, 0.8);
@@ -25,6 +26,7 @@ $flameIn: 3s;
   z-index: 4;
   position: fixed;
   width: min(max(100px, 13vw), 40vw);
+  filter: drop-shadow(0px 0px 3px $gold3);
   animation: FadeIn 1.4s $flameIn both;
 }
 
@@ -40,11 +42,13 @@ $flameIn: 3s;
   bottom: 5px;
   left: 5px;
   transform: scale(1, -1);
+  filter: drop-shadow(0px 0px 3px white);
 }
 .flameRB {
   bottom: 5px;
   right: 5px;
   transform: scale(-1, -1);
+  filter: drop-shadow(0px 0px 3px white);
 }
 
 .mini {

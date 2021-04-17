@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }) {
       image.src = "/images/bg.png";
       image.onload = po;
       console.log(image);
-      console.log("unko");
     }
   }, []);
   return <Component {...pageProps} />;
