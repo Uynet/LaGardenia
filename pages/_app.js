@@ -1,7 +1,6 @@
 import "../styles/global.scss";
 import adobeloader from "../adobefont";
 import { useEffect, useState } from "react";
-import autoprefixer from "autoprefixer";
 
 function Loading(props) {
   const { progress } = props;
@@ -23,8 +22,13 @@ function Loading(props) {
 }
 
 const imageURLs = [
-  "/images/bg.png",
+  "/images/bg-none.png",
+  "/images/label.png",
+  "/images/bg2.png",
   "/images/bubble.png",
+  /*  ---  */
+  "/images/bg.png",
+  "/images/jacket_omote.png",
   "/images/angel-mini.png",
   "/images/flame.png",
   "/images/flame-LT.png",
@@ -35,6 +39,7 @@ function MyApp({ Component, pageProps }) {
   let [isLoadComplete, setComplete] = useState(false);
   let [progress, setProgress] = useState(0);
   let loadedNum = 0;
+  let isFontLoaded = false;
 
   const onImageLoad = () => {
     loadedNum++;
@@ -44,15 +49,30 @@ function MyApp({ Component, pageProps }) {
     }
   };
 
+  const checkFontLoad = () => {
+    const loaded =
+      document.documentElement.className.split(" ").indexOf("wf-active") > 0;
+    if (!loaded) setTimeout(checkFontLoad, 500);
+    else {
+      isFontLoaded = true;
+      setProgress(0);
+      load();
+    }
+  };
+  const load = () => {
+    imageURLs.forEach((url) => {
+      const image = new Image();
+      image.src = url;
+      image.onload = onImageLoad;
+    });
+  };
+
   useEffect(() => {
     if (process.browser) {
       adobeloader(document);
+      checkFontLoad();
 
-      imageURLs.forEach((url) => {
-        const image = new Image();
-        image.src = url;
-        image.onload = onImageLoad;
-      });
+      return;
     }
   }, []);
   return (
