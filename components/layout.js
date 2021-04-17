@@ -120,7 +120,7 @@ function TrackList() {
         <Track num="4" title="此岸ノ華" />
         <Track num="5" title="Astral Heaven" />
         <Track num="6" title="Ever Rezort" credit="/ Arrange:しーけー" />
-        <Track num="7" title="Falewell" />
+        <Track num="7" title="Farewell" />
         <SoundCloudEmbed />
       </div>
     </div>
