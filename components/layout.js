@@ -126,7 +126,12 @@ export default function Layout() {
         <div className={styles.bgDiv} />
       </div>
       <div className={styles.block} />
-      <div className={styles.container}>
+      <div
+        className={styles.container}
+        style={{
+          background: isSp ? "rgba(255,255,255,0.85)" : "",
+        }}
+      >
         <Info />
         <TrackList />
         <Credit />
