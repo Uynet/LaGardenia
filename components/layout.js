@@ -1,5 +1,6 @@
 import styles from "./layout.module.scss";
 import Head from "next/head";
+import Link from "next/link";
 
 export const siteTitle = "LaGardenia";
 
@@ -142,11 +143,13 @@ function Flames() {
 }
 
 function CreditArea(props) {
-  const { name, role } = props;
+  const { link, name, role } = props;
   return (
     <div className={styles.creditArea}>
-      <div className={styles.creditRole}>{role}</div>
-      <div className={styles.creditName}>{name}</div>
+      <a href={link}>
+        <div className={styles.creditRole}>{role}</div>
+        <div className={styles.creditName}>{name}</div>
+      </a>
     </div>
   );
 }
@@ -156,10 +159,22 @@ function Credit() {
     <div>
       <div className={styles.Label}>Credits</div>
       <div className={styles.credits}>
-        <CreditArea name="uynet" role="Compose" />
-        <CreditArea name="しーけー" role="Guest" />
+        <CreditArea
+          link="https://twitter.com/uynet"
+          name="uynet"
+          role="Compose"
+        />
+        <CreditArea
+          link="https://twitter.com/7ck_x"
+          name="しーけー"
+          role="Guest"
+        />
         <CreditArea name="まりあ歩" role="Lyrics" />
-        <CreditArea name="やいぎ" role="Design" />
+        <CreditArea
+          link="https://twitter.com/_yaigi"
+          name="やいぎ"
+          role="Design"
+        />
       </div>
     </div>
   );
