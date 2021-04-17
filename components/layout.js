@@ -203,7 +203,7 @@ function checkDevice() {
 }
 
 export default function Layout() {
-  const isSp = checkDevice() == "SP";
+  const isSp = checkDevice() != "PC";
 
   return (
     <div>
