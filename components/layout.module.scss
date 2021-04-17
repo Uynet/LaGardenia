@@ -78,10 +78,11 @@ $introOutStart: 4s;
   right: 0;
   bottom: 0;
   width: min(max(200px, 30%), 60%);
-  animation: BlinkFadeIn 0.5s 1.6s both, introOut 0.5s $introOutStart forwards;
+  animation: BlinkFadeIn 0.5s 1.6s both, introOut 1s $introOutStart forwards;
 }
 @keyframes introOut {
   from {
+    opacity: 1;
   }
   to {
     opacity: 0;
@@ -98,8 +99,8 @@ $introOutStart: 4s;
   opacity: 0;
   width: 80%;
   animation: flame 1.2s 0.4s cubic-bezier(0, 1, 0, 1) both,
-    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) both,
-    introOut 0.5s $introOutStart forwards;
+    rot45 1.2s 1.1s cubic-bezier(0, 1, 0, 1) forwards,
+    introOut 1s $introOutStart forwards;
 }
 
 .screen1 {
