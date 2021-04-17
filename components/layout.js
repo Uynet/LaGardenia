@@ -93,8 +93,24 @@ function Credit() {
     </div>
   );
 }
+function checkDevice() {
+  const ut = navigator.userAgent;
+  if (
+    ut.indexOf("iPhone") > 0 ||
+    ut.indexOf("iPod") > 0 ||
+    (ut.indexOf("Android") > 0 && ut.indexOf("Mobile") > 0)
+  ) {
+    return "SP";
+  } else if (ut.indexOf("iPad") > 0 || ut.indexOf("Android") > 0) {
+    return "TABLET";
+  } else {
+    return "PC";
+  }
+}
 
 export default function Layout() {
+  const isSp = checkDevice() == "SP";
+
   return (
     <div>
       <Head>
@@ -105,12 +121,9 @@ export default function Layout() {
         <img className={styles.loadingLogo} src="images/logo.png" />
         <Flames />
       </div>
-      {/*<div className={styles.screen1} />*/}
       <div className={styles.jacketBGDummy} />
       <div className={styles.jacketBG}>
         <div className={styles.bgDiv} />
-        {/*<img className={styles.angel} src="images/angel.png" />*/}
-        <img className={styles.bubble} src="images/bubble.png" />
       </div>
       <div className={styles.block} />
       <div className={styles.container}>
