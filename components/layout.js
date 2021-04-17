@@ -66,6 +66,7 @@ function SoundCloudEmbed() {
         frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/912073345&color=%233144a1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        style={{ margin: "50px 0px" }}
       ></iframe>
       <div
         style={{
@@ -77,30 +78,7 @@ function SoundCloudEmbed() {
           whiteSpace: "nowrap",
           textOverflow: "ellipsis",
         }}
-      >
-        <a
-          href="https://soundcloud.com/uynet"
-          title="uynet"
-          target="_blank"
-          style={{
-            color: "#cccccc",
-            textDecoration: "none",
-          }}
-        >
-          uynet
-        </a>
-        <a
-          href="https://soundcloud.com/uynet/stella_xfd"
-          title="STELLA"
-          target="_blank"
-          style={{
-            color: "#cccccc",
-            textDecoration: "none",
-          }}
-        >
-          STELLA
-        </a>
-      </div>
+      ></div>
     </>
   );
 }
@@ -121,7 +99,7 @@ function TrackList() {
         <Track num="5" title="Astral Heaven" />
         <Track num="6" title="Ever Rezort" credit="/ Arrange:しーけー" />
         <Track num="7" title="Farewell" />
-        <SoundCloudEmbed />
+        <SoundCloudEmbed className={styles.SoundCloudEmbed} />
       </div>
     </div>
   );
