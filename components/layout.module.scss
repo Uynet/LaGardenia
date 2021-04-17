@@ -7,6 +7,12 @@ $blue: #8ca5ff;
 
 .container {
   text-shadow: 1px 1px 2px white, 0 0 0.4em white;
+  border-top: solid 1px $gold3;
+  /*
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 40px;
+  */
   // background-image: url("/images/bg-none.png");
   color: #666;
   //background: rgba(255, 255, 255, 0.8);
@@ -18,7 +24,7 @@ $blue: #8ca5ff;
 }
 .block {
   opacity: 0.3;
-  height: 1px;
+  //height: 1px;
   background: $gold2;
 }
 
@@ -257,6 +263,7 @@ $introOutStart: 4s;
   color: #444;
 }
 .Label {
+  margin-top: 30px;
   font-family: fairwater-deco-serif, sans-serif;
   font-weight: 400;
   font-style: normal;
