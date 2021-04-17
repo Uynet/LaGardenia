@@ -41,7 +41,6 @@ function MyApp({ Component, pageProps }) {
     setProgress((loadedNum / imageURLs.length) * 100);
     if (loadedNum == imageURLs.length) {
       setComplete(true);
-      console.log("complete");
     }
   };
 
@@ -56,7 +55,6 @@ function MyApp({ Component, pageProps }) {
       });
     }
   }, []);
-  console.log(progress);
   return (
     <>
       {isLoadComplete ? (
