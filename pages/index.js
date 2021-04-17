@@ -7,6 +7,10 @@ export default class Home extends React.Component {
       <Layout home>
         <Head>
           <title>{"LA GARDENIA"}</title>
+          <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1"
+          ></meta>
         </Head>
       </Layout>
     );
