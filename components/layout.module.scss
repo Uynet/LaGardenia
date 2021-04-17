@@ -308,3 +308,15 @@ $introOutStart: 3.5s;
   border: dashed 2px $mizu;
   border-radius: 7px;
 }
+.info {
+  display: inline-block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.eventInfo {
+}
+.jacket {
+  width: min(80%, 300px);
+  box-shadow: 0px 0px 3px $gold;
+}

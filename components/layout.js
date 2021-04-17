@@ -26,7 +26,15 @@ function Info() {
   return (
     <div>
       <div className={styles.Label}>Info</div>
-      <div className={styles.info}></div>
+      <div className={styles.info}>
+        <div className={styles.eventInfo}>
+          Release : 2021/4/25 春M3 <br />
+          第二展示場シ16 / ゆいネット
+          <br />
+          ¥1000
+        </div>
+        <img src="/images/jacket_omote.png" className={styles.jacket} />
+      </div>
     </div>
   );
 }
