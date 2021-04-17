@@ -265,7 +265,7 @@ $introOutStart: 3.5s;
 .copyright {
   margin: auto;
   height: 50px;
-  font-size: max(8px, 0.4vw);
+  font-size: max(13px, 0.5vw);
   padding: 0 10%;
 }
 
@@ -276,7 +276,7 @@ $introOutStart: 3.5s;
 .trackName {
   font-size: 24px;
   display: inline-block;
-  color: $blue;
+  color: #777;
   margin-top: 10px;
   margin-bottom: -10px;
 }

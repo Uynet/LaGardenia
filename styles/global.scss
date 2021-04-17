@@ -3,7 +3,10 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: vdl-logog, sans-serif;
+  font-family: courier-std, a-otf-futo-min-a101-pr6n, sans-serif;
+  //font-family: courier-std, monospace;
+  //vdl-logog,
+
   color: #333;
   text-align: center;
 }
@@ -13,7 +16,6 @@ body {
 }
 
 a {
-  color: #0070f3;
   text-decoration: none;
 }
 
