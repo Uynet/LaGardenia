@@ -1,29 +1,59 @@
 import "../styles/global.scss";
 import adobeloader from "../adobefont";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import autoprefixer from "autoprefixer";
 
-let isLoadComplete = false;
-let loadCompleteImageNum = 0;
-const po = () => {
-  console.log("complete");
-  loadCompleteImageNum++;
-  if (loadCompleteImageNum == 1) {
-    isLoadComplete = true;
-    console.log("complete");
-  }
-};
+function Loading() {
+  return (
+    <div
+      style={{
+        display: "flex",
+        height: "100vh",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#777",
+      }}
+    >
+      Loading...
+    </div>
+  );
+}
+
+const imageURLs = [
+  "/images/bg.png",
+  "/images/bubble.png",
+  "/images/angel-mini.png",
+  "/images/flame.png",
+  "/images/flame-LT.png",
+  "/images/logo.png",
+  "/images/line.png",
+];
 function MyApp({ Component, pageProps }) {
+  let [isLoadComplete, setComplete] = useState(false);
+  let loadedNum = 0;
+
+  const onImageLoad = () => {
+    loadedNum++;
+    console.log(loadedNum);
+    if (loadedNum == imageURLs.length) {
+      //setComplete(true);
+      console.log("complete");
+    }
+  };
+
   useEffect(() => {
     if (process.browser) {
       adobeloader(document);
 
-      const image = new Image();
-      image.src = "/images/bg.png";
-      image.onload = po;
-      console.log(image);
+      imageURLs.forEach((url) => {
+        const image = new Image();
+        image.src = url;
+        image.onload = onImageLoad;
+      });
     }
   }, []);
-  return <Component {...pageProps} />;
+  console.log(loadedNum);
+  return <>{isLoadComplete ? <Component {...pageProps} /> : <Loading />}</>;
 }
 
 export default MyApp;
