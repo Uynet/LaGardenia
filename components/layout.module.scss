@@ -64,7 +64,20 @@ $flameIn: 3s;
   position: relative;
   margin: auto;
   max-width: 50%;
+  animation: mini 4s infinite;
 }
+@keyframes mini {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
