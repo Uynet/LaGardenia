@@ -22,10 +22,12 @@ function Loading(props) {
 }
 
 const imageURLs = [
+  /*
   "/images/bg-none.png",
   "/images/label.png",
   "/images/bg2.png",
   "/images/bubble.png",
+  */
   /*  ---  */
   "/images/bg.png",
   "/images/jacket_omote.png",
