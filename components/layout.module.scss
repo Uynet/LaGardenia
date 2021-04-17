@@ -230,19 +230,19 @@ $introOutStart: 3.5s;
   color: $gold2;
   display: flex;
   justify-content: center;
+  padding: 5%;
   left: 0;
   right: 0;
-  width: 80vw;
+  width: 100vw;
   margin: auto;
 }
-
 .creditArea {
-  width: 20%;
-  margin: 5%;
+  margin: 0% min(5%, 32px);
   text-align: center;
 }
 .creditName {
-  font-size: 21px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 .creditRole {
   text-shadow: none;
@@ -255,8 +255,8 @@ $introOutStart: 3.5s;
   font-weight: 400;
   font-style: normal;
 
-  text-align: left;
-  padding-left: 10%;
+  //text-align: left;
+  //padding-left: 10%;
   padding-top: 20px;
   font-size: 30px;
   color: $gold2;
@@ -268,10 +268,14 @@ $introOutStart: 3.5s;
   font-size: max(13px, 0.5vw);
   padding: 0 10%;
 }
-
+.trackList {
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+}
 .track {
   text-align: left;
-  margin-left: 15%;
 }
 .trackName {
   font-size: 24px;

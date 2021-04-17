@@ -33,16 +33,18 @@ function TrackList() {
   return (
     <div>
       <div className={styles.Label}>TrackList</div>
-      <Track
-        title="ミルキーホワイト"
-        credit="/ Lyrics:まりあ歩 / Vocal:初音ミク"
-      />
-      <Track title="Utopia Garden" />
-      <Track title="Noname History" />
-      <Track title="此岸ノ華" />
-      <Track title="Astral Heaven" />
-      <Track title="Ever Rezort" credit="/ Arrange:しーけー" />
-      <Track title="Falewell" />
+      <div className={styles.trackList}>
+        <Track
+          title="ミルキーホワイト"
+          credit="/ Lyrics:まりあ歩 / Vocal:初音ミク"
+        />
+        <Track title="Utopia Garden" />
+        <Track title="Noname History" />
+        <Track title="此岸ノ華" />
+        <Track title="Astral Heaven" />
+        <Track title="Ever Rezort" credit="/ Arrange:しーけー" />
+        <Track title="Falewell" />
+      </div>
     </div>
   );
 }
