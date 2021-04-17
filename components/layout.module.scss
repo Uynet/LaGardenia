@@ -279,6 +279,7 @@ $introOutStart: 3.5s;
   margin: 0 5%;
 }
 .trackName {
+  filter: drop-shadow(0px 0px 1px #ddd);
   font-size: 24px;
   display: inline-block;
   color: #777;

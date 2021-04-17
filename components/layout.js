@@ -21,29 +21,88 @@ function Info() {
 }
 
 function Track(props) {
-  const { title, credit } = props;
+  const { num, title, credit } = props;
   return (
     <div className={styles.track}>
+      <div
+        style={{
+          display: "inline",
+        }}
+      >
+        {num + " : "}
+      </div>
       <div className={styles.trackName}>{title}</div>
       <div className={styles.trackCredit}>{credit}</div>
     </div>
   );
 }
+
+function SoundCloudEmbed() {
+  return (
+    <>
+      <iframe
+        width="100%"
+        height="200"
+        scrolling="no"
+        frameBorder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/912073345&color=%233144a1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+      ></iframe>
+      <div
+        style={{
+          fontSize: 10,
+          color: "#cccccc",
+          lineBreak: "anywhere",
+          wordBreak: "normal",
+          overflow: "hidden",
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+        }}
+      >
+        <a
+          href="https://soundcloud.com/uynet"
+          title="uynet"
+          target="_blank"
+          style={{
+            color: "#cccccc",
+            textDecoration: "none",
+          }}
+        >
+          uynet
+        </a>
+        <a
+          href="https://soundcloud.com/uynet/stella_xfd"
+          title="STELLA"
+          target="_blank"
+          style={{
+            color: "#cccccc",
+            textDecoration: "none",
+          }}
+        >
+          STELLA
+        </a>
+      </div>
+    </>
+  );
+}
+
 function TrackList() {
   return (
     <div>
       <div className={styles.Label}>TrackList</div>
       <div className={styles.trackList}>
         <Track
+          num="1"
           title="ミルキーホワイト"
           credit="/ Lyrics:まりあ歩 / Vocal:初音ミク"
         />
-        <Track title="Utopia Garden" />
-        <Track title="Noname History" />
-        <Track title="此岸ノ華" />
-        <Track title="Astral Heaven" />
-        <Track title="Ever Rezort" credit="/ Arrange:しーけー" />
-        <Track title="Falewell" />
+        <Track num="2" title="Utopia Garden" />
+        <Track num="3" title="Noname History" />
+        <Track num="4" title="此岸ノ華" />
+        <Track num="5" title="Astral Heaven" />
+        <Track num="6" title="Ever Rezort" credit="/ Arrange:しーけー" />
+        <Track num="7" title="Falewell" />
+        <SoundCloudEmbed />
       </div>
     </div>
   );
@@ -134,8 +193,8 @@ export default function Layout() {
           background: isSp ? "rgba(255,255,255,0.85)" : "",
         }}
       >
-        <Info />
         <TrackList />
+        <Info />
         <Credit />
         <img
           src="images/angel-mini.png"
