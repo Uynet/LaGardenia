@@ -7,7 +7,7 @@ function Copyright() {
   return (
     <div>
       <div className={styles.copyright}>
-        Copyright© 2021 uynet.work All Rights Reserved.
+        {"Copyright© 2021 uynet All Rights Reserved."}
       </div>
     </div>
   );
