@@ -12,10 +12,20 @@ function Copyright() {
     </div>
   );
 }
+function Store() {
+  return (
+    <div>
+      <div className={styles.Label}>Store</div>
+      comming soon
+    </div>
+  );
+}
+
 function Info() {
   return (
     <div>
       <div className={styles.Label}>Info</div>
+      <div className={styles.info}></div>
     </div>
   );
 }
@@ -195,6 +205,7 @@ export default function Layout() {
       >
         <TrackList />
         <Info />
+        <Store />
         <Credit />
         <img
           src="images/angel-mini.png"
