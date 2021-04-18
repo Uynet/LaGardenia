@@ -11,6 +11,11 @@ export default class Home extends React.Component {
             name="viewport"
             content="width=device-width,initial-scale=1"
           ></meta>
+          <meta name="twitter:description" content="LA GARDENIA"></meta>
+          <meta
+            name="twitter:card"
+            content="https://lagardenia.uynet.work/images/jacket_omote.png"
+          ></meta>
           <meta
             name="twitter:image"
             content="https://lagardenia.uynet.work/images/jacket_omote.png"
