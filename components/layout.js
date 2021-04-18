@@ -99,7 +99,8 @@ function TrackList() {
         <Track num="5" title="Astral Heaven" />
         <Track num="6" title="Ever Rezort" credit="/ Arrange:しーけー" />
         <Track num="7" title="Farewell" />
-        <SoundCloudEmbed className={styles.SoundCloudEmbed} />
+        {/*<SoundCloudEmbed className={styles.SoundCloudEmbed} />*/}
+        (デモ準備中)
       </div>
     </div>
   );
