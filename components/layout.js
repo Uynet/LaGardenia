@@ -187,6 +187,19 @@ export default function Layout() {
     <div>
       <Head>
         <title>{"LA GARDENIA"}</title>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1"
+        ></meta>
+        <meta property="twitter:description" content="LA GARDENIA"></meta>
+        <meta
+          property="twitter:card"
+          content="https://lagardenia.uynet.work/images/jacket_omote.png"
+        ></meta>
+        <meta
+          property="twitter:image"
+          content="https://lagardenia.uynet.work/images/jacket_omote.png"
+        ></meta>
       </Head>
       <div className={styles.intro}>
         <img className={styles.imgFlame} src="images/flame.png" />
