@@ -17,7 +17,7 @@ function Store() {
   return (
     <div>
       <div className={styles.Label}>Store</div>
-      <div className={styles.store}>comming soon...</div>
+      <div className={styles.store}>coming soon...</div>
     </div>
   );
 }
