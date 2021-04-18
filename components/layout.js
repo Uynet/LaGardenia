@@ -191,13 +191,10 @@ export default function Layout() {
           name="viewport"
           content="width=device-width,initial-scale=1"
         ></meta>
-        <meta property="twitter:description" content="LA GARDENIA"></meta>
+        <meta name="twitter:description" content="LA GARDENIA"></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta
-          property="twitter:card"
-          content="https://lagardenia.uynet.work/images/jacket_omote.png"
-        ></meta>
-        <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://lagardenia.uynet.work/images/jacket_omote.png"
         ></meta>
       </Head>
