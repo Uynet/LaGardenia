@@ -65,7 +65,7 @@ function SoundCloudEmbed() {
         scrolling="no"
         frameBorder="no"
         allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/912073345&color=%233144a1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1031865907%3Fsecret_token%3Ds-md5YHE0VW6k&color=%233144a1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
         style={{ margin: "50px 0px" }}
       ></iframe>
       <div
@@ -99,8 +99,7 @@ function TrackList() {
         <Track num="5" title="Astral Heaven" />
         <Track num="6" title="Ever Rezort" credit="/ Arrange:しーけー" />
         <Track num="7" title="Farewell" />
-        {/*<SoundCloudEmbed className={styles.SoundCloudEmbed} />*/}
-        (デモ準備中)
+        {<SoundCloudEmbed className={styles.SoundCloudEmbed} />}
       </div>
     </div>
   );
