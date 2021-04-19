@@ -188,6 +188,8 @@ export default function Layout() {
       <Head>
         <title>{"LA GARDENIA"}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="永遠の箱庭" />
+
         <meta property="og:title" content="LA GARDENIA" />
         <meta property="og:site_name" content="LA GARDENIA" />
         <meta property="og:description" content="永遠の箱庭" />

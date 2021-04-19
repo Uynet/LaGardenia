@@ -7,19 +7,25 @@ export default class Home extends React.Component {
       <Layout home>
         <Head>
           <title>{"LA GARDENIA"}</title>
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
+          <meta name="description" content="永遠の箱庭" />
+
+          <meta property="og:title" content="LA GARDENIA" />
+          <meta property="og:site_name" content="LA GARDENIA" />
+          <meta property="og:description" content="永遠の箱庭" />
+          <meta property="og:url" content="https://lagardenia.uynet.work" />
+          <meta property="og:type" content="website" />
           <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1"
-          ></meta>
-          <meta property="twitter:description" content="LA GARDENIA"></meta>
-          <meta
-            property="twitter:card"
+            property="og:image"
             content="https://lagardenia.uynet.work/images/jacket_omote.png"
-          ></meta>
+          />
+          <meta name="twitter:description" content="永遠の箱庭" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="LA GARDENIA" />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://lagardenia.uynet.work/images/jacket_omote.png"
-          ></meta>
+          />
         </Head>
       </Layout>
     );
