@@ -10,6 +10,13 @@ body {
   color: #333;
   text-align: center;
 }
+img {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 
 * {
   box-sizing: border-box;
