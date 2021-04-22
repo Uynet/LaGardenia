@@ -7,6 +7,7 @@ $blue: #8ca5ff;
 
 .container_wrapper {
   // first: relative
+  width: 100%;
   position: relative;
 }
 
@@ -24,6 +25,7 @@ $blue: #8ca5ff;
   //width: 100vw;
   
   // first > second: absolute and clip
+  width: 100%;
   position: absolute;
   clip-path: inset(0px 0px -100vh 0px);
 }
