@@ -180,7 +180,6 @@ function checkDevice() {
 
 export default class Home extends React.Component {
   render() {
-    const isSp = checkDevice() != "PC";
     return (
       <div>
         <div className={styles.intro}>
@@ -193,22 +192,21 @@ export default class Home extends React.Component {
           <div className={styles.bgDiv} />
         </div>
         <div className={styles.block} />
-        <div
-          className={styles.container}
-          style={{
-            background: isSp ? "rgba(255,255,255,0.85)" : "",
-          }}
-        >
-          <TrackList />
-          <Info />
-          <Store />
-          <Credit />
-          <img
-            src="images/angel-mini.png"
-            className={styles.mini}
-            width="200px"
-          />
-          <Copyright />
+        <div className={styles.container_wrapper}>
+          <div
+            className={styles.container}
+          >
+            <TrackList />
+            <Info />
+            <Store />
+            <Credit />
+            <img
+              src="images/angel-mini.png"
+              className={styles.mini}
+              width="200px"
+            />
+            <Copyright />
+          </div>
         </div>
       </div>
     );
