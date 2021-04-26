@@ -15,7 +15,9 @@ function Store() {
   return (
     <div>
       <div className={styles.Label}>Store</div>
-      <div className={styles.store}>coming soon...</div>
+      <a href="https://uynet.booth.pm/items/2921546" className={styles.Booth}>
+        BOOTH
+      </a>
     </div>
   );
 }
@@ -193,9 +195,7 @@ export default class Home extends React.Component {
         </div>
         <div className={styles.block} />
         <div className={styles.container_wrapper}>
-          <div
-            className={styles.container}
-          >
+          <div className={styles.container}>
             <TrackList />
             <Info />
             <Store />
