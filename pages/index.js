@@ -34,7 +34,9 @@ function Info() {
           ¥1000
         </div>
         <img src="/images/jacket_omote.png" className={styles.jacket} />
-        <a href="/images/jacket_omote.png">ジャケットダウンロード</a>
+        <a href="/images/jacket_omote.png" download="LaGardenia">
+          ジャケットダウンロード
+        </a>
       </div>
     </div>
   );
